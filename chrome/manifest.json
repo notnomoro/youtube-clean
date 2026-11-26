@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Youtube Clean",
     "version": "1.0.0",
-    "description": "YouTube más limpio: anuncios, Shorts y enfoque en una sola extensión.",
+    "description": "Quita anuncios y Shorts de YouTube, y esconde lo que distrae.",
     "permissions": ["storage"],
     "action": {
         "default_title": "Youtube Clean",

@@ -3,9 +3,9 @@
 
   # Youtube Clean
 
-  **YouTube más limpio: anuncios, Shorts y enfoque en una sola extensión.**
+  **Para ver YouTube sin el anuncio del medio y sin Shorts en el inicio.**
 
-  Un panel para Chromium y Firefox. Sin cuenta, sin servidores y sin telemetría. Los ajustes se quedan en el navegador.
+  Chrome, Edge y Firefox. Abres el icono, marcas lo que quieres quitar y recargas la pestaña.
 
   ![Chrome](https://img.shields.io/badge/Chrome-MV3-4285F4?logo=googlechrome&logoColor=white)
   ![Edge](https://img.shields.io/badge/Edge-MV3-0078D4?logo=microsoftedge&logoColor=white)
@@ -26,13 +26,12 @@
 
 ## Qué hace
 
-- **Anuncios.** Salta el anuncio del reproductor y oculta los bloques de la página: banners, masthead y anuncios del feed.
-- **Shorts.** Abre un Short en el reproductor normal, y puede quitar la pestaña y las tarjetas del inicio.
-- **Enfoque.** Oculta lo que distrae —feed, recomendados, comentarios, chat, relacionados, barra lateral— y puede apagar la reproducción automática y las playlists.
-- **Un interruptor.** Protección enciende o pausa todo sin borrar la configuración.
-- **Local.** Solo pide el permiso `storage`. No hay cuenta que crear ni datos que salgan del navegador. Detalle en [Privacidad](docs/privacidad.md).
+- Salta el anuncio del video y esconde los banners y los anuncios del feed.
+- Si entras a un Short, lo abre como video normal. También puedes esconder la pestaña de Shorts y las tarjetas del inicio.
+- En Enfoque puedes quitar el feed, los recomendados, los comentarios, el chat y la columna de la derecha, y evitar que YouTube ponga solo el siguiente video.
+- Protección apaga todo de golpe. Lo que habías marcado se queda, por si lo vuelves a encender.
 
-Cada ajuste, con su valor por defecto, está en [Ajustes](docs/ajustes.md).
+Lo que viene marcado al instalarla está en [Ajustes](docs/ajustes.md). Qué toca y qué no, en [Privacidad](docs/privacidad.md).
 
 ---
 
@@ -61,11 +60,11 @@ Cada ajuste, con su valor por defecto, está en [Ajustes](docs/ajustes.md).
 
 ### Descargar
 
-En [Releases](https://github.com/notnomoro/youtube-clean/releases) están `youtube-clean-chrome.zip` y `youtube-clean-firefox.zip`. Descomprime el zip y carga esa carpeta en el navegador. El paso a paso está en [Instalación](docs/instalacion.md).
+En [Releases](https://github.com/notnomoro/youtube-clean/releases) hay dos zip: `youtube-clean-chrome.zip` (Chrome, Edge, Brave u Opera) y `youtube-clean-firefox.zip`. Se descomprime y se carga esa carpeta. El paso a paso está en [Instalación](docs/instalacion.md).
 
 ### Desde el código
 
-No hay que instalar dependencias ni compilar.
+No hay que compilar nada.
 
 1. Clona el repositorio.
 2. En Chrome, Edge, Brave u Opera, carga la carpeta `chrome/` como extensión descomprimida.
@@ -102,41 +101,30 @@ Cómo encajan esas piezas: [Arquitectura](docs/arquitectura.md).
 
 ## Código abierto
 
-Youtube Clean se publica bajo **MIT**. Puedes usarla, modificarla y redistribuirla. El aviso de copyright tiene que seguir en las copias.
+Va bajo **MIT**. Puedes usarla, cambiarla y pasársela a quien quieras. Si la copias, deja el aviso de copyright.
 
-- ¿Encontraste un error? Abre un [issue](https://github.com/notnomoro/youtube-clean/issues) con el navegador, la versión y los pasos.
-- ¿Quieres proponer un ajuste? Los issues también valen para eso.
-- ¿Quieres cambiar el código? Lee [Contribuir](CONTRIBUTING.md): fork, rama y pull request. Si el cambio se ve, adjunta una captura.
+- Si algo falla, abre un [issue](https://github.com/notnomoro/youtube-clean/issues) y di el navegador y qué estabas haciendo.
+- Si echas en falta un ajuste, el issue también sirve.
+- Si vas a tocar el código, mira [Contribuir](CONTRIBUTING.md).
 
 ### Inspiración
 
-Estas tres extensiones marcan de dónde sale cada parte. Youtube Clean las reúne en un solo panel, con interfaz propia, para Chromium y para Firefox.
+No salió de cero. Cada parte se apoya en una extensión que ya hacía bien una cosa, y aquí quedan juntas en el mismo panel.
 
 | Proyecto | Qué aporta aquí |
 |---|---|
 | [Youtube-shorts-block](https://github.com/doma-itachi/Youtube-shorts-block) | Abrir los Shorts en el reproductor normal. MIT, © 2022 土間いたち. |
-| [distraction-free-youtube-chrome-extension](https://github.com/adrianbartnik/distraction-free-youtube-chrome-extension) | Ocultar el feed, los comentarios, las notificaciones y el resto de distracciones, y apagar la reproducción automática. Actualización a Manifest V3 del DF Tube de [calkuta](https://chromewebstore.google.com/detail/df-tube-distraction-free/mjdepdfccjgcndkmemponafgioodelna). |
-| [Youtube-AdBlocker](https://github.com/kananinirav/Youtube-AdBlocker) | Saltar el anuncio del reproductor y ocultar los anuncios de la página. MIT, © 2022 kananinirav. |
-
----
-
-## Autor
-
-- [Hack The Box](https://app.hackthebox.com/users/4027818)
-- [TryHackMe](https://tryhackme.com/p/nomoro)
-- [HackerOne](https://hackerone.com/nomoro)
-- [Canal de Youtube](https://www.youtube.com/@notnomoro)
-- [X (Twitter)](https://x.com/nomorooo/)
-- [Correo de Contacto](mailto:contact.refutable883@slmail.me)
+| [distraction-free-youtube-chrome-extension](https://github.com/adrianbartnik/distraction-free-youtube-chrome-extension) | Esconder feed, comentarios, notificaciones y lo demás que distrae, y apagar la reproducción automática. Es el DF Tube de [calkuta](https://chromewebstore.google.com/detail/df-tube-distraction-free/mjdepdfccjgcndkmemponafgioodelna), pasado a Manifest V3. |
+| [Youtube-AdBlocker](https://github.com/kananinirav/Youtube-AdBlocker) | Saltar el anuncio del reproductor y esconder los de la página. MIT, © 2022 kananinirav. |
 
 ---
 
 ## Licencia
 
-Distribuido bajo la licencia **MIT**. El texto está en [LICENSE](LICENSE).
+**MIT**. El texto está en [LICENSE](LICENSE).
 
-Las fuentes del panel (Inter, Barlow Semi Condensed y JetBrains Mono) siguen la [SIL Open Font License 1.1](https://openfontlicense.org/).
+Las fuentes del panel (Inter, Barlow Semi Condensed y JetBrains Mono) van con la [SIL Open Font License 1.1](https://openfontlicense.org/).
 
 <div align="center">
-<sub>Inspirado en <a href="https://github.com/doma-itachi/Youtube-shorts-block">Youtube-shorts-block</a>, <a href="https://github.com/adrianbartnik/distraction-free-youtube-chrome-extension">distraction-free-youtube</a> y <a href="https://github.com/kananinirav/Youtube-AdBlocker">Youtube-AdBlocker</a>.</sub>
+<sub><a href="https://notnomoro.github.io">notnomoro.github.io</a> · <a href="https://www.youtube.com/@notnomoro">YouTube</a> · <a href="https://x.com/nomorooo/">X</a></sub>
 </div>

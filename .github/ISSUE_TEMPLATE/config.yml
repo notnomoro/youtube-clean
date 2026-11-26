@@ -1,5 +1,5 @@
 blank_issues_enabled: false
 contact_links:
-  - name: Correo
-    url: mailto:contact.refutable883@slmail.me
-    about: Para algo que no deba quedar público en un issue.
+  - name: Página
+    url: https://notnomoro.github.io
+    about: Para escribir fuera de un issue.
