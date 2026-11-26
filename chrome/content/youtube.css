@@ -1,0 +1,117 @@
+html.yc-hide-page-ads ytd-action-companion-ad-renderer,
+html.yc-hide-page-ads ytd-display-ad-renderer,
+html.yc-hide-page-ads ytd-video-masthead-ad-advertiser-info-renderer,
+html.yc-hide-page-ads ytd-video-masthead-ad-primary-video-renderer,
+html.yc-hide-page-ads ytd-in-feed-ad-layout-renderer,
+html.yc-hide-page-ads ytd-ad-slot-renderer,
+html.yc-hide-page-ads yt-about-this-ad-renderer,
+html.yc-hide-page-ads yt-mealbar-promo-renderer,
+html.yc-hide-page-ads ytd-statement-banner-renderer,
+html.yc-hide-page-ads ytd-banner-promo-renderer,
+html.yc-hide-page-ads ytd-promoted-sparkles-web-renderer,
+html.yc-hide-page-ads ytm-promoted-sparkles-web-renderer,
+html.yc-hide-page-ads .ytd-video-masthead-ad-v3-renderer,
+html.yc-hide-page-ads #masthead-ad,
+html.yc-hide-page-ads #video-masthead,
+html.yc-hide-page-ads #player-ads,
+html.yc-hide-page-ads #watch7-sidebar-ads,
+html.yc-hide-page-ads .ad-div,
+html.yc-hide-page-ads .ad-overlay {
+    display: none !important;
+}
+
+html.yc-block-video-ads .ytp-ad-overlay-container,
+html.yc-block-video-ads .ytp-ad-text-overlay {
+    display: none !important;
+}
+
+html.yc-hide-shorts-tab a[title="Shorts"],
+html.yc-hide-shorts-tab a[title="ショート"],
+html.yc-hide-shorts-tab ytm-pivot-bar-item-renderer:has(.pivot-bar-item-tab.pivot-shorts) {
+    display: none !important;
+    pointer-events: none !important;
+}
+
+html.yc-hide-shorts-feed .yc-shorts,
+html.yc-hide-shorts-feed ytd-continuation-item-renderer:not(:last-child):not(#comments *) {
+    display: none !important;
+}
+
+html.yc-hide-feed #feed,
+html.yc-hide-feed ytd-browse[page-subtype="home"] {
+    display: none !important;
+}
+
+html.yc-hide-recommended .yc-recommended {
+    display: none !important;
+}
+
+html.yc-hide-trending #trending-guide-item,
+html.yc-hide-trending ytd-guide-section-renderer:nth-child(1) #items > ytd-guide-entry-renderer:nth-child(2),
+html.yc-hide-trending #appbar-nav li:nth-child(2),
+html.yc-hide-trending ytd-mini-guide-renderer #items ytd-mini-guide-entry-renderer:nth-child(2) {
+    display: none !important;
+}
+
+html.yc-hide-subbar #appbar-guide-menu {
+    width: 0;
+}
+
+html.yc-hide-subbar app-drawer#guide,
+html.yc-hide-subbar ytd-mini-guide-renderer {
+    display: none !important;
+}
+
+html.yc-hide-bell #buttons ytd-notification-topbar-button-renderer:nth-child(4) {
+    display: none !important;
+}
+
+html.yc-hide-related .ytp-endscreen-content,
+html.yc-hide-related .ytp-ce-video {
+    display: none !important;
+}
+
+html.yc-hide-comments #comments,
+html.yc-hide-comments #watch-discussion {
+    display: none !important;
+}
+
+html.yc-hide-chat ytd-live-chat-frame {
+    display: none !important;
+}
+
+html.yc-hide-merch ytd-merch-shelf-renderer,
+html.yc-hide-merch .ytd-merch-shelf-renderer {
+    display: none !important;
+}
+
+html.yc-hide-sidebar #related,
+html.yc-hide-sidebar #watch7-sidebar-contents {
+    display: none !important;
+}
+
+html.yc-hide-nonlists ytd-guide-section-renderer:nth-child(n + 2) {
+    display: none !important;
+}
+
+.yc-open-regular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 6px 0;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+.yc-open-regular svg {
+    fill: currentColor;
+}
+
+@media screen and (min-width: 600px) {
+    .yc-open-regular {
+        color: #606060;
+    }
+}

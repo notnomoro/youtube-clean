@@ -1,0 +1,38 @@
+{
+    "manifest_version": 3,
+    "name": "Youtube Clean",
+    "version": "1.0.0",
+    "description": "YouTube más limpio: anuncios, Shorts y enfoque en una sola extensión.",
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "youtube-clean@extension.local",
+            "strict_min_version": "121.0",
+            "data_collection_permissions": {
+                "required": ["none"]
+            }
+        }
+    },
+    "permissions": ["storage"],
+    "action": {
+        "default_title": "Youtube Clean",
+        "default_popup": "popup/index.html",
+        "default_icon": {
+            "16": "assets/icon16.png",
+            "48": "assets/icon48.png",
+            "128": "assets/icon128.png"
+        }
+    },
+    "icons": {
+        "16": "assets/icon16.png",
+        "48": "assets/icon48.png",
+        "128": "assets/icon128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://*.youtube.com/*"],
+            "js": ["shared/defaults.js", "content/content.js"],
+            "css": ["content/youtube.css"],
+            "run_at": "document_start"
+        }
+    ]
+}

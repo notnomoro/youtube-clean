@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Youtube Clean</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <section class="screen" data-screen="home">
+        <header class="topbar">
+            <span class="mark">
+                <img src="../assets/logo.svg" alt="" width="35" height="35">
+            </span>
+            <h1 class="title">Youtube Clean</h1>
+            <span class="signal" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+        </header>
+        <div class="content">
+            <button type="button" class="protect" data-toggle="active" role="switch" aria-checked="true">
+                <span class="protect-copy">
+                    <span class="protect-title">Protección</span>
+                    <span class="protect-sub">YouTube más limpio en esta pestaña</span>
+                </span>
+                <img class="switch-art" src="../assets/switch-on.svg" alt="" width="52" height="32">
+            </button>
+            <h2 class="group">Ajustes</h2>
+            <div class="card">
+                <button type="button" class="nav-row" data-nav="ads">
+                    <span class="well">
+                        <span class="glyph glyph-ads">
+                            <img src="../assets/ads.svg" alt="" width="19.7657" height="17.3657">
+                        </span>
+                    </span>
+                    <span class="nav-copy">
+                        <span class="nav-label">Anuncios</span>
+                        <span class="nav-support">Video y página</span>
+                    </span>
+                    <span class="glyph glyph-chevron">
+                        <img src="../assets/chevron.svg" alt="" width="10.4971" height="18.7314">
+                    </span>
+                </button>
+                <button type="button" class="nav-row" data-nav="shorts">
+                    <span class="well">
+                        <span class="glyph glyph-play">
+                            <img src="../assets/play.svg" alt="" width="19.2" height="19.2">
+                        </span>
+                    </span>
+                    <span class="nav-copy">
+                        <span class="nav-label">Shorts</span>
+                        <span class="nav-support">Reproductor, pestaña y feed</span>
+                    </span>
+                    <span class="glyph glyph-chevron">
+                        <img src="../assets/chevron.svg" alt="" width="10.4971" height="18.7314">
+                    </span>
+                </button>
+                <button type="button" class="nav-row" data-nav="focus">
+                    <span class="well">
+                        <span class="glyph glyph-focus">
+                            <img src="../assets/focus.svg" alt="" width="19.2" height="19.2">
+                        </span>
+                    </span>
+                    <span class="nav-copy">
+                        <span class="nav-label">Enfoque</span>
+                        <span class="nav-support">Feed, reproducción y diseño</span>
+                    </span>
+                    <span class="glyph glyph-chevron">
+                        <img src="../assets/chevron.svg" alt="" width="10.4971" height="18.7314">
+                    </span>
+                </button>
+            </div>
+            <div class="spacer"></div>
+            <p class="footer">Youtube Clean</p>
+        </div>
+    </section>
+
+    <section class="screen" data-screen="ads" hidden>
+        <header class="topbar topbar-back">
+            <button type="button" class="back-btn" data-back aria-label="Volver">
+                <span class="glyph glyph-back">
+                    <img src="../assets/back.svg" alt="" width="19.5314" height="18.7314">
+                </span>
+            </button>
+            <h1 class="title">Anuncios</h1>
+            <span class="signal" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+        </header>
+        <div class="content">
+            <p class="intro">Anuncios de video y bloques en la página.</p>
+            <div class="card">
+                <button type="button" class="switch-row" data-option="ads.blockVideo" role="switch" aria-checked="true">
+                    <span class="switch-label">Bloquear anuncios de video</span>
+                    <img class="switch-art" src="../assets/switch-on.svg" alt="" width="52" height="32">
+                </button>
+                <button type="button" class="switch-row" data-option="ads.hidePage" role="switch" aria-checked="true">
+                    <span class="switch-label">Ocultar anuncios de página</span>
+                    <img class="switch-art" src="../assets/switch-on.svg" alt="" width="52" height="32">
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="screen" data-screen="shorts" hidden>
+        <header class="topbar topbar-back">
+            <button type="button" class="back-btn" data-back aria-label="Volver">
+                <span class="glyph glyph-back">
+                    <img src="../assets/back.svg" alt="" width="19.5314" height="18.7314">
+                </span>
+            </button>
+            <h1 class="title">Shorts</h1>
+            <span class="signal" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+        </header>
+        <div class="content">
+            <p class="intro">Pasa los Shorts al reproductor normal.</p>
+            <div class="card">
+                <button type="button" class="switch-row" data-option="shorts.redirect" role="switch" aria-checked="true">
+                    <span class="switch-label">Abrir Shorts en el reproductor normal</span>
+                    <img class="switch-art" src="../assets/switch-on.svg" alt="" width="52" height="32">
+                </button>
+                <button type="button" class="switch-row" data-option="shorts.hideTab" role="switch" aria-checked="false">
+                    <span class="switch-label">Ocultar pestaña de Shorts</span>
+                    <img class="switch-art" src="../assets/switch-off.svg" alt="" width="52" height="32">
+                </button>
+                <button type="button" class="switch-row" data-option="shorts.hideFeed" role="switch" aria-checked="true">
+                    <span class="switch-label">Ocultar Shorts del feed</span>
+                    <img class="switch-art" src="../assets/switch-on.svg" alt="" width="52" height="32">
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="screen" data-screen="focus" hidden>
+        <header class="topbar topbar-back">
+            <button type="button" class="back-btn" data-back aria-label="Volver">
+                <span class="glyph glyph-back">
+                    <img src="../assets/back.svg" alt="" width="19.5314" height="18.7314">
+                </span>
+            </button>
+            <h1 class="title">Enfoque</h1>
+            <span class="signal" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+        </header>
+        <div class="content">
+            <p class="intro">Elige qué partes de YouTube se ocultan.</p>
+            <div class="card">
+                <h2 class="group">Inicio</h2>
+                <button type="button" class="switch-row" data-option="focus.hideFeed" role="switch" aria-checked="false">
+                    <span class="switch-label">Ocultar feed</span>
+                    <img class="switch-art" src="../assets/switch-off.svg" alt="" width="52" height="32">
+                </button>
+                <button type="button" class="switch-row" data-option="focus.hideRecommended" role="switch" aria-checked="false">
+                    <span class="switch-label">Ocultar recomendados</span>
+                    <img class="switch-art" src="../assets/switch-off.svg" alt="" width="52" height="32">
+                </button>
+                <button type="button" class="switch-row" data-option="focus.hideTrending" role="switch" aria-checked="false">
+                    <span class="switch-label">Ocultar tendencias</span>
+                    <img class="switch-art" src="../assets/switch-off.svg" alt="" width="52" height="32">
+                </button>
+                <button type="button" class="switch-row" data-option="focus.hideSubBar" role="switch" aria-checked="false">
+                    <span class="switch-label">Ocultar barra de suscripciones</span>
+                    <img class="switch-art" src="../assets/switch-off.svg" alt="" width="52" height="32">
+                </button>
+                <button type="button" class="switch-row" data-option="focus.hideNotificationBell" role="switch" aria-checked="false">
+                    <span class="switch-label">Ocultar campana</span>
+                    <img class="switch-art" src="../assets/switch-off.svg" alt="" width="52" height="32">
+                </button>
+            </div>
+            <div class="card">
+                <h2 class="group">Reproducción</h2>
+                <button type="button" class="switch-row" data-option="focus.hideRelated" role="switch" aria-checked="true">
+                    <span class="switch-label">Ocultar relacionados</span>
+                    <img class="switch-art" src="../assets/switch-on.svg" alt="" width="52" height="32">
+                </button>
+                <button type="button" class="switch-row" data-option="focus.hideComments" role="switch" aria-checked="false">
+                    <span class="switch-label">Ocultar comentarios</span>
+                    <img class="switch-art" src="../assets/switch-off.svg" alt="" width="52" height="32">
+                </button>
+                <button type="button" class="switch-row" data-option="focus.hideLiveChat" role="switch" aria-checked="false">
+                    <span class="switch-label">Ocultar chat en vivo</span>
+                    <img class="switch-art" src="../assets/switch-off.svg" alt="" width="52" height="32">
+                </button>
+                <button type="button" class="switch-row" data-option="focus.hideMerch" role="switch" aria-checked="false">
+                    <span class="switch-label">Ocultar merchandising</span>
+                    <img class="switch-art" src="../assets/switch-off.svg" alt="" width="52" height="32">
+                </button>
+                <button type="button" class="switch-row" data-option="focus.disableAutoplay" role="switch" aria-checked="true">
+                    <span class="switch-label">Desactivar reproducción automática</span>
+                    <img class="switch-art" src="../assets/switch-on.svg" alt="" width="52" height="32">
+                </button>
+                <button type="button" class="switch-row" data-option="focus.disablePlaylists" role="switch" aria-checked="false">
+                    <span class="switch-label">Desactivar listas de reproducción</span>
+                    <img class="switch-art" src="../assets/switch-off.svg" alt="" width="52" height="32">
+                </button>
+            </div>
+            <div class="card">
+                <h2 class="group">Diseño</h2>
+                <button type="button" class="switch-row" data-option="focus.hideSidebar" role="switch" aria-checked="true">
+                    <span class="switch-label">Ocultar barra lateral</span>
+                    <img class="switch-art" src="../assets/switch-on.svg" alt="" width="52" height="32">
+                </button>
+                <button type="button" class="switch-row" data-option="focus.hideNonLists" role="switch" aria-checked="false">
+                    <span class="switch-label">Mostrar solo biblioteca</span>
+                    <img class="switch-art" src="../assets/switch-off.svg" alt="" width="52" height="32">
+                </button>
+            </div>
+        </div>
+    </section>
+    <script src="../shared/defaults.js"></script>
+    <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+name: Error
+description: Algo de Youtube Clean no se comporta como debería.
+title: "[Error] "
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: browser
+    attributes:
+      label: Navegador
+      options:
+        - Chrome
+        - Edge
+        - Brave
+        - Opera
+        - Firefox
+        - Otro
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Versión de la extensión
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: Qué ocurre
+      description: Qué ajuste tenías activo y qué esperabas ver en YouTube.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Pasos para reproducirlo
+      placeholder: |
+        1. Abro un video
+        2. Activo…
+        3. Veo…
+    validations:
+      required: true

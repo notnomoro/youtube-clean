@@ -1,0 +1,379 @@
+@font-face {
+    font-family: "Barlow Semi Condensed";
+    src: url("../fonts/BarlowSemiCondensed-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Barlow Semi Condensed";
+    src: url("../fonts/BarlowSemiCondensed-BoldItalic.ttf") format("truetype");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url("../fonts/JetBrainsMono-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    width: 360px;
+    height: 600px;
+    overflow: hidden;
+    background: #08090b;
+    color: #f5f6f7;
+    font-family: "Inter", sans-serif;
+}
+
+button {
+    font: inherit;
+    color: inherit;
+    background: none;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    text-align: left;
+}
+
+img {
+    display: block;
+}
+
+.switch-art {
+    flex-shrink: 0;
+}
+
+button:focus-visible {
+    outline: 2px solid #ff343b;
+    outline-offset: -2px;
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    height: 600px;
+    background: #08090b;
+    border: 1px solid #2b2e35;
+}
+
+.screen[hidden] {
+    display: none;
+}
+
+.topbar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+    height: 64px;
+    padding: 0 16px;
+    flex-shrink: 0;
+    background: #08090b;
+    border-bottom: 2px solid #ff343b;
+}
+
+.topbar-back {
+    gap: 4px;
+    padding: 0 16px 0 4px;
+}
+
+.title {
+    flex: 1;
+    min-width: 0;
+    margin: 0;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 30px;
+    color: #f5f6f7;
+}
+
+.signal {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    display: flex;
+    gap: 3px;
+    height: 4px;
+}
+
+.signal i {
+    display: block;
+    width: 4px;
+    height: 4px;
+    background: #ff343b;
+}
+
+.signal i:last-child {
+    background: #ffd43b;
+}
+
+.mark {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+}
+
+.mark img {
+    position: absolute;
+    left: 2.5px;
+    top: 2.5px;
+}
+
+.well {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #2b2e35;
+    border-radius: 4px;
+    background: #25282e;
+    flex-shrink: 0;
+}
+
+.glyph {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.glyph img {
+    position: absolute;
+}
+
+.glyph-ads img {
+    left: 2px;
+    top: 3.2px;
+}
+
+.glyph-play img,
+.glyph-focus img {
+    left: 2.4px;
+    top: 2.4px;
+}
+
+.glyph-chevron img {
+    left: 7.04px;
+    top: 2.63px;
+}
+
+.glyph-back img {
+    left: 1.67px;
+    top: 2.63px;
+}
+
+.back-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+.back-btn:hover {
+    background: rgba(245, 246, 247, 0.08);
+}
+
+.content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 16px;
+    min-height: 0;
+    padding: 20px 16px;
+    overflow: auto;
+    scrollbar-color: #2b2e35 transparent;
+}
+
+.content > * {
+    flex-shrink: 0;
+}
+
+.protect {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    padding: 20px 16px;
+    border: 1px solid #ff343b;
+    border-left-width: 3px;
+    border-radius: 4px;
+    background: #271113;
+}
+
+.protect.is-off {
+    border-color: #ffd43b;
+    background: #15171b;
+}
+
+.protect-copy {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+}
+
+.protect-title {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 24px;
+    color: #ffffff;
+}
+
+.protect.is-off .protect-title {
+    color: #f5f6f7;
+}
+
+.protect-sub {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #aeb3be;
+}
+
+.group {
+    margin: 0;
+    padding: 12px 16px 4px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 1.1px;
+    color: #ffd43b;
+}
+
+.card {
+    background: #111317;
+    border: 1px solid #2b2e35;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.nav-row,
+.switch-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    border-bottom: 1px solid #2b2e35;
+}
+
+.nav-row {
+    min-height: 64px;
+    padding: 12px 8px 12px 12px;
+}
+
+.switch-row {
+    min-height: 56px;
+    padding: 8px 12px 8px 16px;
+}
+
+.nav-row:hover,
+.switch-row:hover,
+.protect:hover {
+    background-image: linear-gradient(rgba(245, 246, 247, 0.06), rgba(245, 246, 247, 0.06));
+}
+
+.nav-copy {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+}
+
+.nav-label {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 24px;
+    color: #f5f6f7;
+}
+
+.nav-support {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #aeb3be;
+}
+
+.switch-label {
+    flex: 1;
+    min-width: 0;
+    font-family: "Inter", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 20px;
+    color: #f5f6f7;
+}
+
+.intro {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #aeb3be;
+}
+
+.spacer {
+    position: relative;
+    flex: 1;
+    min-height: 24px;
+    background-image: repeating-linear-gradient(
+        to bottom,
+        rgba(43, 46, 53, 0.25) 0 1px,
+        transparent 1px 20px
+    );
+}
+
+.spacer::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 48px;
+    height: 2px;
+    background: #ff343b;
+}
+
+.footer {
+    margin: 0;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 1px;
+    color: #aeb3be;
+    text-align: center;
+}

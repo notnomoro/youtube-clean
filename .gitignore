@@ -1,0 +1,16 @@
+dist/
+.edge-profile/
+*.zip
+*.crx
+*.xpi
+*.pem
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+.idea/
+.vscode/
+*.log
+.env
+.env.*
