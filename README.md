@@ -7,6 +7,8 @@
 
   Chrome, Edge y Firefox. Abres el icono, marcas lo que quieres quitar y recargas la pestaña.
 
+  A Manifest V3 extension that skips YouTube ads, hides Shorts, and adds a focus mode.
+
   ![Chrome](https://img.shields.io/badge/Chrome-MV3-4285F4?logo=googlechrome&logoColor=white)
   ![Edge](https://img.shields.io/badge/Edge-MV3-0078D4?logo=microsoftedge&logoColor=white)
   ![Firefox](https://img.shields.io/badge/Firefox-121%2B-FF7139?logo=firefox&logoColor=white)
